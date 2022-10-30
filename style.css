@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap");
+
+
+/* Default Values */
+:root {
+  --primary: #181717;
+  --secondary: #606060;
+  --blue: #2429af;
+  --white: #f3f3f3;
+  --font-main: "DM Sans", sans-serif;
+}
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+ul{
+list-style: none;
+display: flex;
+justify-content: space-around;
+flex-grow: .1;
+}
+a{
+text-decoration: none;
+color:var(--primary);
+}
+a:hover{
+    color:var(--blue);
+    text-decoration: underline;
+}
+/* body */
+body {
+  margin: 102px 160px 70px;
+  background-color: #6900FF;
+}
+/* nav */
+nav {
+  font-family: var(--font-main);
+  font-size: large;
+  box-sizing: border-box;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+}
+hr{
+  border-bottom: 2px solid var(--white);
+  margin: 50px 0;
+}
+section.home {
+  height: 473px;
+  left: 160px;
+  top: 757px;
+  padding-bottom:106px;
+  display:flex;
+  justify-content: space-between;
+}
+section.about {
+  height: 600px;
+  position: relative;
+  top: 220px;
+  display:flex;
+  justify-content: space-between;
+}
+.summary{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 30px;
+}
+.section-img{
+  height: 365px;
+  width:540px;
+  background-color: #181717;
+}
+.about-img{
+  width: 467px;
+  height:472px;
+  background-color: #181717;
+}
+#my-skills{
+  display: block;
+}
+article{
+  font-family: var(--font-main);
+  color:white;
+  margin-right: 120px;
+}
+article h1{
+  font-size:26px;
+  margin-bottom: 22px;
+}
+article p{
+  font-size:20px;
+}
+#head-title{
+  display: flex;
+  justify-content: space-between;
+  height: 283px;
+  margin: auto;
+  align-items: center;
+  color:var(--white);
+  font-family: var(--font-main);
+}
+#intro{
+font-size: 28px;
+}
+#intro-detail{
+  font-size: 24px;
+}
+/* footer */
+footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 520px;
+  font-family: var(--font-main);
+}
+footer a{
+  color:var(--white);
+}
